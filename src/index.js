@@ -2,9 +2,6 @@ import app from "./app.js";
 
 const port = app.get("port");
 
-async function main() {
-    await app.listen(port);
-    console.log(`Server running on port ${port}`);
-}
+app.listen(port);
 
-main();
+console.log(`Server on port ${port}`);
